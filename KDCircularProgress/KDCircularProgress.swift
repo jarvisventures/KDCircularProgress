@@ -129,7 +129,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
         }
     }
     
-    @IBInspectable public var glowAmount: CGFloat = 1.0 {//Between 0 and 1
+    public var glowAmount: CGFloat = 1.0 {//Between 0 and 1
         didSet {
             glowAmount = glowAmount.clamped(toMinimum: 0, maximum: 1)
             progressLayer.glowAmount = glowAmount
